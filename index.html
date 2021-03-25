@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My New Portfolio</title>
+    <meta name="description" content="portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="head">
+        <div class="topMenuWrapper">
+            <div class="container">
+                <div class="topMenu">
+                    <div class="logo">
+                        <h1><a href="#">Shakib SARDAR</a> </h1>
+                    </div>
+                    <div class="menu">
+                        <ul class="barMenu">
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#about">ABOUT</a></li>
+                            <li><a href="#skill">SKILL</a></li>
+                            <li><a href="#">My TEAMS</a></li>
+                            <li><a href="#">SERVICES</a></li>
+                            <li><a href="#contact">CONTACT</a></li>
+                            <li class="lastListItem"><i class="fas fa-search" onclick="funcSearchOn()"
+                                    id="SearchOn"></i><i class="fas fa-times" id="SearchOff"
+                                    onclick="funcSearchOff()"></i></li>
+                            <div class="searchBox">
+                                <input type="search" name="search" id="search" value="Search..."><i
+                                    class="fas fa-search" id="Searchbtn"></i></div>
+                        </ul>
+                    </div>
+
+                    <div class="menu_icon">
+                        <i class="fas fa-bars Onmenu" onclick="funcMenuOn()"></i>
+                        <i class="fas fa-times Offmenu" onclick="funcMenuOff()"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+
+
+            <div class="contentWrapper">
+                <div class="content">
+                    <h3>Hello, my name is </h3>
+                    <h2 class="name">SHAKIB SARDAR</h2>
+                    <div class="proBox">
+                        <span class="ImText">I am a </span>
+                        <span class="profession"></span>
+                    </div> <br>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="cvbtn" download="CV">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section id="about">
+        <div class="container">
+            <div class="aboutText">
+                <h2>ABOUT MYSELF</h2>
+                <p>Who am I</p>
+            </div>
+            <div class="aboutContentWrapper">
+                <div class="aboutImage">
+                    <img src="image/Shakib.png" alt="">
+                </div>
+                <div class="aboutInfo">
+                    <h3>Hi, I'm SHAKIB SARDAR</h3>
+                    <p>What is Lorem Ipsum?
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        It has survived not only five centuries, but also the leap into electronic typesetting,
+                        remaining essentially unchanged. It was popularised in the 1960s with the release of
+                        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                        publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+                    <div class="aboutbtn">
+                        <a href="#" target="_blank" rel="noopener noreferrer">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="skill">
+        <div class="container">
+            <div class="skillText">
+                <h2>MY SKILLS</h2>
+                <p>What I can</p>
+            </div>
+            <div class="skillContentWrapper">
+
+                <div class="skillInfo">
+                    <h3>Hi, I'm SHAKIB SARDAR</h3>
+                    <p>What is Lorem Ipsum?
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        It has survived not only five centuries, but also the leap into electronic typesetting,
+                        remaining essentially unchanged. It was popularised in the 1960s with the release of
+                        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                        publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+                    <div class="skillbtn">
+                        <a href="#" target="_blank" rel="noopener noreferrer">Hire Me</a>
+                    </div>
+                </div>
+                <div class="skillBar">
+                    <div class="singleSkill">
+                        <span class="langName">HTML</span>
+                        <span class="percentage">80%</span>
+                    </div>
+                    <h3 class="main_bar"><span class="box"><span class="bar h"></span></span></h3>
+                    <div class="singleSkill">
+                        <span class="langName">CSS</span>
+                        <span class="percentage">60%</span>
+                    </div>
+                    <h3 class="main_bar"><span class="box"><span class="bar c"></span></span></h3>
+                    <div class="singleSkill">
+                        <span class="langName">JavaScript</span>
+                        <span class="percentage">50%</span>
+                    </div>
+                    <h3 class="main_bar"><span class="box"><span class="bar j"></span></span></h3>
+                    <div class="singleSkill">
+                        <span class="langName">SEO</span>
+                        <span class="percentage">40%</span>
+                    </div>
+                    <h3 class="main_bar"><span class="box"><span class="bar s"></span></span></h3>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+
+
+    <section id="contact">
+        <div class="container">
+            <div class="contactText">
+                <h2>Contact with Me</h2>
+                <p>How can I help</p>
+            </div>
+            <div class="contactWrapper">
+                <div class="contactInfoWrapper">
+                    <div class="contactInfo">
+                        <h3>Get in touch</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                    </div>
+                    <div class="contactAddress">
+                        <div class="singleAddress">
+                            <div class="contactIcon"><i class="fas fa-file-signature"></i></div>
+                            <div class="contactDetails">
+                                <h3>Name</h3>
+                                <p>SHAKIB SARDAR</p>
+                            </div>
+                        </div>
+                        <div class="singleAddress">
+                            <div class="contactIcon"><i class="fas fa-address-card"></i></div>
+                            <div class="contactDetails">
+                                <h3>Address</h3>
+                                <p>Ashulia, Savar, Dhaka</p>
+                            </div>
+                        </div>
+                        <div class="singleAddress">
+                            <div class="contactIcon"><i class="fas fa-envelope-square"></i></div>
+                            <div class="contactDetails">
+                                <h3>Email</h3>
+                                <p><a href="mailto:sakib.hossen0143@gmail.com" class="myEmail">sakib.hossen0143@gmail.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contactFormWrapper">
+                    <form name="myForm" method="POST" id="myForm" onsubmit="return msgMe()">
+                        <div class="form_controler">
+                            <p id="noticeName" style="color: red;"></p>
+                            <input type="text" name="name" placeholder="Enter your Name" class="contactName " value="">
+                        </div>
+                        <div class="form_controler">
+                            <p id="noticeEmail" style="color: red;"></p>
+                            <input type="email" name="email" placeholder="Enter your Email" class="contactEmail"
+                                value="" required>
+                        </div>
+                        <div class="form_controler">
+                            <input type="text" name="subject" placeholder="Subject" class="contactSubject">
+                        </div>
+                        <div class="form_controler"> <textarea name="description" placeholder="Message"
+                                class="contactDescription"  cols="20" rows="5" required></textarea></div>
+                        <div class="contactFormbtn"> <input type="submit" value="Send Message" class="contactbtn"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footerWrapper">
+                <p class="copyright">Copyright text act 2020</p>
+                <div class="socialIcon">
+                    <a href="#" target="_blank">
+                        <div class="singleSocialIcon">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                    </a>
+                    <a href="#" target="_blank">
+                        <div class="singleSocialIcon">
+                            <i class="fas fa-envelope-square"></i>
+                        </div>
+                    </a>
+                    <a href="#" target="_blank">
+                        <div class="singleSocialIcon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </a>
+                    <a href="#" target="_blank">
+                        <div class="singleSocialIcon">
+                            <i class="fab fa-google-plus-g"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="" async defer></script>
+    <script src="https://kit.fontawesome.com/98aa4383c2.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="js/typed.js"></script>
+
+    <script>
+        var typed = new Typed('.profession', {
+            strings: [
+                "Web Developer",
+                "SEO Expert",
+                "Web Designer"],
+
+            typeSpeed: 60,
+            backSpeed: 60,
+            loop: true
+        });
+
+    </script>
+</body>
+
+</html>

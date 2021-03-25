@@ -1,0 +1,1205 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Sansita+Swashed:wght@300;400&family=Staatliches&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Oswald', sans-serif;
+    font-family: 'Sansita Swashed', cursive;
+    font-family: 'Staatliches', cursive; */
+}
+
+i {
+    cursor: pointer;
+}
+
+section {
+    margin: 100px auto 100px auto;
+}
+
+.head {
+    /* background-color: black; */
+    background-image: url(../image/IMG_20170216_1904190.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    /* width: 100vw; */
+    height: 100vh;
+}
+
+.topMenuWrapper {
+    width: 100%;
+    height: auto;
+    /* background-color: tomato; */
+    /* padding: 20px; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.change_topMenuWrapper {
+    background-color: #828282f7 !important;
+}
+
+.container {
+    width: 1150px;
+    /* border: 2px solid red; */
+    margin: 0 auto 0 auto;
+}
+
+.topMenu {
+    width: 100%;
+    height: auto;
+    /* background-color: tomato; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 250px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.logo h1 {
+    font-size: 45px;
+    font-family: 'Sansita Swashed', cursive;
+    text-transform: uppercase;
+}
+
+.logo h1 a {
+    text-decoration: none;
+    color: #ff6347cc;
+}
+
+.menu {
+    width: 530px;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    display: inline;
+    padding: 10px;
+}
+
+.menu ul li:last-child {
+    padding-right: 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    transition: 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: rgba(136, 236, 13, 0.938);
+    /* background: rgba(235, 155, 155, 0.822); */
+}
+
+/* .menu ul li a:active{
+    color: greenyellow;
+} */
+
+/* .menu ul li a:hover li{
+
+    background: rgba(26, 23, 23, 0.822) !important;
+} */
+
+.menu_icon {
+    width: 30px;
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    right: 20px;
+    color: tomato;
+}
+
+.menu_icon .Onmenu {
+    display: none;
+    cursor: pointer;
+}
+
+.menu_icon .Offmenu {
+    display: none;
+    cursor: pointer;
+}
+
+.searchBox {
+    /* position: fixed;
+    top: 80px;
+    right: 185px; */
+    position: relative;
+}
+
+.searchBox #search {
+    width: 400px;
+    padding: 12px 20px;
+    border-radius: 15px;
+    background: #9c9c9ca1;
+    color: #11e411;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    /* float: right; */
+    /* opacity: 99999; */
+    display: none;
+}
+
+#Searchbtn {
+    font-size: 17px;
+    background: blue;
+    padding: 15px;
+    color: white;
+    /* margin-left: -25px; */
+    border-radius: 5px;
+    /* outline: none; */
+    border: none;
+    position: absolute;
+    top: 0px;
+    right: -30px;
+    display: none;
+}
+
+#SearchOff {
+    display: none;
+    float: right;
+    color: #17cc17;
+}
+
+.contentWrapper {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+}
+
+.content {
+    width: 60%;
+    height: auto;
+    position: absolute;
+    left: 5%;
+    top: 40%;
+    /* transform: translate(-50%, -50%); */
+}
+
+.content h3 {
+    /* font-family: 'Oswald', sans-serif; */
+    font-family: 'Sansita Swashed', cursive;
+    letter-spacing: 1.5px;
+    word-spacing: 1.5px;
+    margin-bottom: 15px;
+}
+
+.name {
+    color: tomato;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    margin-bottom: 15px;
+    font-size: 70px;
+}
+
+.content span {
+    font-size: 40px;
+    /* display: inline-block; */
+    font-family: 'Oswald', sans-serif;
+    margin-right: 15px;
+    letter-spacing: 1.5px;
+    word-spacing: 1.5px;
+    margin-bottom: 15px;
+}
+
+.profession {
+    color: green;
+    font-size: 50px !important;
+}
+
+.typed-cursor {
+    opacity: 1;
+    color: green;
+    font-weight: bold;
+}
+
+.cvbtn {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 15px 50px;
+    display: inline-block;
+    background: rgba(255, 99, 71, 0.329);
+    border: 1px solid rgb(121, 53, 14);
+    border-radius: 10px;
+    font-family: 'Sansita Swashed', cursive;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    outline: none;
+    transition: 0.3s ease;
+    /* display: block;
+    width: 226px; */
+    margin-top: 15px;
+}
+
+.cvbtn:hover {
+    color: rgba(102, 13, 13, 0.904);
+    /* background: rgba(235, 155, 155, 0.822); */
+    background: transparent;
+}
+
+.aboutContentWrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.aboutText {
+    width: 100%;
+    text-align: center;
+}
+
+.aboutText h2 {
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 10px;
+}
+
+.aboutText p {
+    font-family: 'Sansita Swashed', cursive;
+    text-transform: lowercase;
+    margin-bottom: 50px;
+    word-spacing: 3px;
+}
+
+.aboutImage {
+    width: 400px;
+    margin-right: 70px;
+    float: left;
+}
+
+.aboutImage img {
+    width: 100%;
+    height: auto;
+}
+
+.aboutInfo {
+    width: 680px;
+    float: left;
+}
+
+.aboutInfo h3 {
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 10px;
+}
+
+.aboutInfo p {
+    color: #6e6a6ab3;
+    line-height: 35px;
+    font-size: 20px;
+    word-spacing: 5px;
+    margin-bottom: 25px;
+}
+
+.aboutbtn {
+    width: 100%;
+    height: auto;
+}
+
+.aboutbtn a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 10px 50px;
+    display: inline-block;
+    background: tomato;
+    border: 1px solid rgb(121, 53, 14);
+    border-radius: 10px;
+    font-family: 'Sansita Swashed', cursive;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.aboutbtn a:hover {
+    color: rgba(65, 13, 13, 0.87);
+    background: rgba(235, 155, 155, 0.822);
+}
+
+#skill {
+    background: black;
+    padding: 100px 0px 100px 0px;
+}
+
+.skillContentWrapper {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skillText {
+    width: 100%;
+    text-align: center;
+}
+
+.skillText h2 {
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.skillText p {
+    font-family: 'Sansita Swashed', cursive;
+    text-transform: lowercase;
+    margin-bottom: 50px;
+    word-spacing: 3px;
+    color: white;
+}
+
+.skillInfo {
+    width: 680px;
+    /* float: left; */
+    margin-right: 70px;
+}
+
+.skillInfo h3 {
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.skillInfo p {
+    color: #8e8b8bf0;
+    line-height: 35px;
+    font-size: 20px;
+    word-spacing: 5px;
+    margin-bottom: 25px;
+}
+
+.skillbtn {
+    width: 100%;
+    height: auto;
+}
+
+.skillbtn a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 10px 50px;
+    display: inline-block;
+    background: tomato;
+    border: 1px solid rgb(121, 53, 14);
+    border-radius: 10px;
+    font-family: 'Sansita Swashed', cursive;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.skillbtn a:hover {
+    color: rgba(65, 13, 13, 0.87);
+    background: rgba(235, 155, 155, 0.822);
+}
+
+.skillBar {
+    width: 400px;
+    /* float: left; */
+    color: rgba(255, 105, 180, 0.548);
+    background: #fff9f912;
+    height: auto;
+    display: inline-table;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.singleSkill {
+    width: 100%;
+    overflow: hidden;
+}
+
+.langName {
+    /* width: 90%; */
+    font-family: 'Oswald', sans-serif;
+    float: left;
+}
+
+.percentage {
+    /* width: 10%; */
+    font-family: 'Oswald', sans-serif;
+    float: right;
+}
+
+.main_bar {
+    margin-bottom: 25px;
+}
+
+span.box {
+    width: 100%;
+    background: white;
+    display: block;
+    height: 4px;
+    border-radius: 2px;
+    margin: 10px 0px;
+}
+
+span.bar {
+    /* width: 50%; */
+    height: 4px;
+    background: linear-gradient(to left, #3232b4, #972f52, #40667c);
+    display: block;
+    margin: 10px 0px;
+    border-radius: 5px;
+}
+
+.h {
+    width: 80%;
+}
+
+.c {
+    width: 70%;
+}
+
+.j {
+    width: 50%;
+}
+
+.s {
+    width: 40%;
+}
+
+.contactText {
+    width: 100%;
+    text-align: center;
+}
+
+.contactText h2 {
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 10px;
+}
+
+.contactText p {
+    font-family: 'Sansita Swashed', cursive;
+    text-transform: lowercase;
+    margin-bottom: 50px;
+    word-spacing: 3px;
+}
+
+.contactWrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.contactInfoWrapper {
+    width: 50%;
+    float: left;
+    margin-right: 5%;
+}
+
+.contactFormWrapper {
+    width: 45%;
+    float: left;
+    overflow: hidden;
+}
+
+.contactInfo {
+    width: 100%;
+}
+
+.contactInfo h3 {
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 10px;
+}
+
+.contactInfo p {
+    color: #6e6a6ab3;
+    line-height: 35px;
+    font-size: 20px;
+    word-spacing: 5px;
+    margin-bottom: 25px;
+}
+
+.contactAddress {
+    width: 100%;
+}
+
+.singleAddress {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.contactIcon {
+    width: 5%;
+    color: tomato;
+    float: left;
+    padding-right: 35px;
+}
+
+.contactIcon i {
+    font-size: 20px;
+}
+
+.contactDetails {
+    width: 90%;
+    float: left;
+}
+
+.contactDetails h3 {
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 10px;
+}
+
+.contactDetails p {
+    color: #6e6a6ab3;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.contactName {
+    /* width: 47.5%; */
+    /* float: left; */
+    /* margin-right: 5%; */
+    padding: 20px 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #ddd;
+}
+
+.contactEmail {
+    /* width: 47.5%; */
+    /* float: left; */
+    padding: 20px 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #ddd;
+}
+
+.contactSubject {
+    width: 100%;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: #ddd;
+}
+
+.contactDescription {
+    width: 100%;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: #ddd;
+}
+
+.contactFormbtn {
+    width: 100%;
+}
+
+.contactbtn {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 10px 50px;
+    display: inline-block;
+    background: tomato;
+    border: 1px solid rgb(121, 53, 14);
+    border-radius: 10px;
+    font-family: 'Sansita Swashed', cursive;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.contactbtn:hover {
+    color: rgba(65, 13, 13, 0.87);
+    background: rgba(235, 155, 155, 0.822);
+}
+
+.footer {
+    background-color: black;
+    color: white;
+}
+
+.footerWrapper {
+    width: 100%;
+    overflow: hidden;
+    padding: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socialIcon {
+    overflow: hidden;
+}
+
+.socialIcon a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.singleSocialIcon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.singleSocialIcon:hover {
+    background: rgba(243, 239, 239, 0.952);
+    color: red;
+}
+
+/* .P {
+    font-size: 10px;
+} */
+
+@media (min-width: 1281px) {
+    .logo {
+        width: 400px;
+    }
+    .logo h1 {
+        font-size: 2.7rem;
+    }
+    .menu {
+        display: contents;
+    }
+    .menu ul {
+        display: block !important;
+    }
+    .menu_icon .Onmenu {
+        display: none !important;
+    }
+    .menu_icon .Offmenu {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .container {
+        max-width: 80%;
+    }
+    .logo h1 {
+        font-size: 2rem;
+    }
+    .menu {
+        display: contents;
+    }
+    .menu ul {
+        display: block !important;
+    }
+    .menu_icon .Onmenu {
+        display: none !important;
+    }
+    .menu_icon .Offmenu {
+        display: none !important;
+    }
+    .aboutImage {
+        width: 35%;
+        margin-right: 50px;
+        /* float: left; */
+    }
+    /* .aboutImage img{
+        width: 100%;
+        height: auto;
+    } */
+    .aboutInfo {
+        width: 58%;
+        /* float: left; */
+    }
+    .aboutInfo p {
+        line-height: 30px;
+        font-size: 1.1rem;
+        word-spacing: 3px;
+    }
+    .skillInfo {
+        margin-right: 50px;
+    }
+    .skillInfo p {
+        font-size: 1.1rem;
+        word-spacing: 3px;
+        line-height: 30px;
+    }
+    .main_bar {
+        margin-bottom: 35px;
+    }
+    .singleAddress {
+        width: 47.5%;
+        float: left;
+        margin-right: 5%;
+    }
+    .singleAddress:nth-child(2) {
+        margin-right: 0;
+    }
+    .singleAddress:last-child {
+        width: 100%;
+        float: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        max-width: 85%;
+    }
+    .logo {
+        max-width: 20%;
+    }
+    .logo h1 {
+        font-size: 2rem;
+    }
+    .menu {
+        display: contents;
+    }
+    .menu ul li {
+        padding: .5rem;
+    }
+    /* .menu ul li a {
+        font-family: 'Oswald', sans-serif;
+    } */
+    .menu ul {
+        display: block !important;
+    }
+    .menu_icon .Onmenu {
+        display: none !important;
+    }
+    .menu_icon .Offmenu {
+        display: none !important;
+    }
+    .content {
+        width: 100%;
+    }
+    .name {
+        font-size: 2.8rem;
+    }
+    .content span {
+        letter-spacing: 1px;
+        word-spacing: 1px;
+        font-size: 2rem;
+    }
+    .content .profession {
+        letter-spacing: 0px;
+        word-spacing: 0px;
+        font-size: 1.5px;
+    }
+    .profession {
+        font-size: 2.5rem !important;
+    }
+    .aboutImage {
+        width: 40%;
+        margin-right: 30px;
+        /* float: left; */
+    }
+    /* .aboutImage img{
+        width: 100%;
+        height: auto;
+    } */
+    .aboutInfo {
+        width: 55%;
+        /* float: left; */
+    }
+    .aboutInfo p {
+        line-height: 1.5rem;
+        font-size: 1rem;
+        word-spacing: 1px;
+    }
+    .skillInfo {
+        margin-right: 30px;
+    }
+    .skillInfo p {
+        line-height: 25px;
+        font-size: 1rem;
+        word-spacing: 1px;
+    }
+    .skillBar {
+        width: 50%;
+    }
+    .singleAddress {
+        width: 47.5%;
+        float: left;
+        margin-right: 5%;
+    }
+    .singleAddress:nth-child(2) {
+        margin-right: 0;
+    }
+    .singleAddress:last-child {
+        width: 100%;
+        float: none;
+    }
+    #SearchOff {
+        padding-top: 10px;
+    }
+    #Searchbtn {
+        padding: 11px !important;
+        right: -25px !important;
+        top: 8px !important;
+    }
+    .searchBox #search {
+        padding: 8px 20px !important;
+        width: 300px !important;
+    }
+}
+@media (max-width: 1024px) and (orientation: landscape) {
+    .logo h1{
+        font-size: 2rem !important;
+    }
+
+    .content {
+        top: 50%;
+    }
+    .name {
+        font-size: 1.5rem !important;
+        margin-bottom: 0px !important;
+    }
+    .ImText{
+        font-size: 1.2rem !important;
+    }
+    .content .profession {
+        font-size: 1.5rem !important;
+    }
+    .cvbtn {
+        padding: 8px 40px;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+    .head {
+        height: 100vh;
+    }
+    /* .menu ul li{
+        padding: 10px;
+    } */
+    .menu_icon{
+        top: 23px !important;
+    }
+    .content {
+        top: 40%;
+        /* transform: translate(-50%, -50%); */
+    }
+    .name {
+        font-size: 1.5rem !important;
+        margin-bottom: 0px !important;
+    }
+    .ImText{
+        font-size: 1.2rem !important;
+    }
+    .content .profession {
+        font-size: 1.5rem !important;
+    }
+    .cvbtn {
+        padding: 8px 40px;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 85%;
+    }
+    .topMenu {
+        display: block;
+    }
+    .logo {
+        width: 100%;
+        /* display: block; */
+        text-align: center;
+    }
+    .logo h1 {
+        font-size: 2.5rem;
+    }
+    .menu {
+        width: 100%;
+    }
+    .menu ul {
+        display: none;
+    }
+    .menu ul li {
+        display: block;
+        padding: 7px;
+        text-align: center;
+        border-bottom: 1px solid #ffffff40;
+    }
+    /* .menu ul li:last-child {
+        display: none !important;
+    } */
+    #SearchOn {
+        display: none;
+    }
+    .menu_icon {
+        position: absolute;
+        top: 30px;
+        right: 20px;
+    }
+    .menu_icon .Onmenu {
+        display: block;
+        /* position: absolute;
+        top: 35px;
+        right: 30px; */
+    }
+    .content {
+        width: 100%;
+        text-align: center;
+    }
+    .name {
+        font-size: 2.5rem;
+    }
+    .content span {
+        letter-spacing: 1px;
+        word-spacing: 1px;
+        font-size: 1.6rem;
+    }
+    .content .profession {
+        letter-spacing: 0px;
+        word-spacing: 0px;
+        font-size: 1.5px;
+    }
+    .profession {
+        font-size: 2.8rem !important;
+    }
+    .cvbtn {
+        padding: 10px 40px ;
+    }
+    .aboutImage {
+        width: 80%;
+        padding-bottom: 50px;
+        float: none;
+        margin: auto;
+    }
+    .aboutImage img {
+        width: 100%;
+        height: auto;
+    }
+    .aboutInfo {
+        width: 100%;
+        float: none;
+    }
+    .aboutInfo p {
+        line-height: 1.5rem;
+        font-size: 1rem;
+        word-spacing: 1px;
+    }
+    .aboutbtn {
+        text-align: center;
+    }
+    .aboutbtn a {
+        padding: 10px 40px;
+    }
+    .skillContentWrapper {
+        display: block;
+    }
+    .skillInfo {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    .skillInfo h3 {
+        font-family: 'Oswald', sans-serif;
+        margin-bottom: 10px;
+        color: white;
+    }
+    .skillInfo p {
+        line-height: 25px;
+        font-size: 1rem;
+        word-spacing: 1px;
+    }
+    .skillBar {
+        width: 100%;
+        /* float: left; */
+        color: rgba(255, 105, 180, 0.548);
+    }
+    .skillbtn {
+        width: 100%;
+        text-align: center;
+    }
+    .skillbtn a {
+        padding: 10px 40px;
+    }
+    .contactInfoWrapper {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+    .contactFormWrapper {
+        width: 100%;
+        float: none;
+        overflow: hidden;
+    }
+    .contactFormbtn {
+        width: 100%;
+        text-align: center;
+    }
+    .singleSocialIcon {
+        max-width: 30px;
+        max-height: 30px;
+    }
+    /* search box */
+    .searchBox {
+        display: none;
+    }
+    #SearchOff {
+        display: none !important;
+    }
+}
+
+@media (max-width: 481px) {
+    .head {
+        background-image: url(../image/Untitled-1new.png);
+    }
+    .logo h1 {
+        font-size: 1.7rem;
+    }
+    .menu ul li {
+        padding: .6rem;
+    }
+    .menu ul li a {
+        font-size: .9rem;
+        /* border-bottom: 1px solid black; */
+    }
+    .menu_icon {
+        width: 30px;
+        color: tomato;
+        font-size: 20px;
+        top: 23px;
+        right: 5px;
+    }
+    .content {
+        top: 60%;
+    }
+    .name {
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+    .content span {
+        font-size: 1.5rem;
+    }
+    .ImText {
+        display: block;
+    }
+    .content .profession {
+        font-size: 1.5px;
+    }
+    .profession {
+        font-size: 2rem !important;
+    }
+    .cvbtn{
+        padding: 8px 30px;
+        margin-top: 0;
+        font-weight: 500;
+    }
+    /* .skillbtn{
+        width: 100%;
+        text-align: center;
+    }
+
+    .skillbtn a{
+        padding: 10px 40px;
+    } */
+    .contactName {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+    }
+    .contactEmail {
+        width: 100%;
+        float: none;
+    }
+    .contactbtn {
+        padding: 10px 40px;
+    }
+    .footerWrapper {
+        display: block;
+        text-align: center;
+    }
+    .copyright {
+        margin-bottom: 5%;
+    }
+}
+
+@media (max-width: 320px) {
+    .logo h1 {
+        display: none;
+    }
+    .menu ul li {
+        padding: .6rem;
+    }
+    .lastListItem {
+        padding: 0 !important;
+        border-bottom: none !important;
+    }
+    /* .menu ul li:last-child{
+        padding: 0 !important;
+        border-bottom: none !important;
+    } */
+    .menu ul li a {
+        font-size: .8rem;
+        /* border-bottom: 1px solid black; */
+    }
+    .topMenu {
+        position: relative;
+        padding-bottom: 15px;
+    }
+    .menu_icon {
+        position: absolute;
+        top: 15px;
+        right: 0;
+        display: block;
+    }
+    .name {
+        font-size: 1.8rem;
+    }
+    .content span {
+        font-size: 1.5rem;
+    }
+    .content .profession {
+        font-size: 1.5px;
+    }
+    .profession {
+        font-size: 1.5rem !important;
+    }
+    .cvbtn{
+        padding: 8px 20px;
+    }
+    .skillbtn a {
+        padding: 10px 30px;
+    }
+    .aboutbtn a {
+        padding: 10px 30px;
+    }
+    .myEmail{
+        font-size: 11px;
+    }
+    .contactbtn {
+        padding: 10px 20px;
+    }
+}
